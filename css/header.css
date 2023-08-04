@@ -1,0 +1,195 @@
+header {
+    overflow: hidden;
+}
+
+.padding_top_header {
+    padding: 10px 70px 10px 70px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #ccc !important;
+}
+
+.top_header {
+    background-color: #3e3e3f;
+    /* height: 100px; */
+    width: 100%;
+    /* padding: 150px; */
+}
+
+.desk_menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_bank_div_mob,
+.toggle_icon {
+    display: none;
+}
+
+.green {
+    color: #4EC34E;
+}
+
+.logo_flex {
+    display: flex;
+    align-items: center;
+}
+
+.red {
+    color: #BD1C1C;
+}
+
+.bank_name {
+    font-size: 14px;
+}
+
+.main_header {
+    background: #232324;
+    padding: 10px 10px 10px 70px;
+}
+
+.inbox_style {
+    border: 1px solid white;
+    background-color: #232324;
+    border-radius: 8px;
+    display: inline-flex;
+    padding: 12px 19px 12px 35px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 320px;
+}
+
+/* Basic styling for the search container */
+.search-container {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Style the input box */
+.search-container input[type="text"] {
+    border: none;
+    background-color: #232324;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+
+/* Style the search button */
+.search-container button {
+    background-color: #232324;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.login_btn {
+    padding: 8px 40px;
+    gap: 10px;
+    background-color: #39FF14;
+    border: none;
+    /* color: ; */
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.navigation_ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.navigation_ul>li>a {
+    font-size: 25px;
+    text-align: end;
+}
+
+.navigation_ul>li {
+    margin-right: 20px;
+}
+
+li {
+    list-style: none;
+}
+
+.log_flex {
+    display: flex !important;
+    align-items: center;
+}
+
+@media (max-width:1030px) {
+    .bank_name {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .desk_menu {
+        margin: 2% 0% !important;
+    }
+}
+
+@media (max-width:770px) {
+    .main_header {
+        padding: 10px 30px 10px 30px;
+        text-align: left;
+    }
+
+    .desk_menu {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width:550px) {
+    .main_header {
+        padding: 0;
+    }
+
+    .padding_top_header {
+        padding: 10px 40px 10px 40px;
+    }
+
+    .main_bank_div {
+        display: none !important;
+    }
+
+    .main_bank_div_mob {
+        display: block;
+    }
+
+    .main_bank_div_mob>.row>.col-6 {
+        margin: 1% 0%;
+    }
+
+    .toggle_icon {
+        display: contents;
+    }
+
+    .log_flex {
+        display: flex !important;
+        justify-content: space-between;
+        padding: 2% 2%
+    }
+
+    .navigation_ul {
+        flex-direction: column;
+        padding: 5px;
+        align-items: inherit;
+        /* justify-content: flex-start; */
+    }
+
+    /* .navigation_ul>li {
+        margin: 1% 0%;
+    } */
+
+    .desk_menu {
+        display: none !important;
+    }
+}
