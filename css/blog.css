@@ -5,7 +5,7 @@ body {
 .blog-row {
     display: flex;
     justify-self: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .blog-main-card {
